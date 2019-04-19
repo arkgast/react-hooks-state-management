@@ -9,10 +9,12 @@ const initialState = {
   count
 }
 
-const App = () => (
-  <Store.Provider initialState={initialState}>
-    <Counter />
-  </Store.Provider>
-)
+const App = () => {
+  return (
+    <Store.Provider initialState={initialState}>
+      <Counter />
+    </Store.Provider>
+  )
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
