@@ -1,3 +1,5 @@
-import { createContext } from 'react'
+// import factory
+import makeStore from '../utils/makeStore'
 
-export default createContext<any | null>(null)
+// export a new state instance
+export default makeStore()
